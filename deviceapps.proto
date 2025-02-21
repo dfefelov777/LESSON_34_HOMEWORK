@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message DeviceApps {
+    message Device {
+        bytes id = 1;
+        bytes type = 2;
+    }
+    Device device = 1;
+    repeated uint32 apps = 2;
+    double lat = 3;
+    double lon = 4;
+}
